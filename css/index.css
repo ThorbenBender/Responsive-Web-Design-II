@@ -342,7 +342,7 @@ footer h2{
         flex-direction: column;
     }
     .Paragraph-1 .box h2 {
-        font-size: 100%;
+        font-size: 1.5rem;
     }
     .Paragraph-1 .box {
         width: 100%;
@@ -363,7 +363,7 @@ footer h2{
         padding-bottom: 5%;
     }
     .Paragraph-2 .box-2 h2{
-        font-size: 100%;
+        font-size: 1.5rem;
     }
     footer{
         width: 97%;
