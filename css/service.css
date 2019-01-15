@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+/*Your code*/
+
+.page {
+    max-width: 880px;
+    display: flex;
+    margin: auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+header{
+    width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+    align-items: center;
+    padding-bottom: 2%;
+}
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+	animation-name: skale;
+	animation-duration: 3000000s;
+}
+nav a:last-child:hover{
+    animation: none;
+}
+@keyframes skale {
+	0% {transform: scale3d(1.2, 1.2, 1.2);}
+	100% {transform: scale3d(1.2, 1.2, 1.2);}
+}
+header .logo{
+    display: flex;
+    align-items: baseline;
+}
+.header-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 
+}
+.header-img .services-header-img {
+    width: 100%;
+    height: 20%;
+}
+.services {
+    width: 100%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+.services h2 {
+    font-size: 2rem;
+}
+.services p{
+    display: flex;
+    font-size: 1rem;
+}
+
+.first-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.box .learn-more{
+    justify-self: flex-end;
+    margin-top: 10%; 
+    border: 1px solid black;
+    padding: 2%;
+    border-radius: 3px;
+}
+
+.box {
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    background: #F4F3F4;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    border: 1px solid black;
+}
+
+ .box p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.second-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.third-row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px black;
+}
+
+footer {
+    width: 100%;
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .service-facts{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: flex-start;
+}
+footer .list-of-things{
+    padding-top: 5%;
+    list-style: disc;
+    line-height: 1.5;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+    header{
+        width: 100%;
+        height: 10%;
+        padding: 0%;
+    }
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        color: green;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+    }
+    nav a:hover {
+        animation-name: skale;
+        animation-duration: 3000000s;
+    }
+    @keyframes skale {
+        0% {transform: scale3d(1.2, 1.2, 1.2);}
+        100% {transform: scale3d(1.2, 1.2, 1.2);}
+    }
+    header .logo{
+        display: flex;
+        align-items: baseline;
+        width: 50%;
+    }
+    .header-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header-img .services-header-img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    header {
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 0;
+    }
+    nav {
+        width: 97%;
+    }
+    .header-img .services-header-img {
+        width: 97%;
+        height: 20%;
+    }
+    .services{
+        width: 97%;
+    }
+    .first-row {
+        padding-top: 5%;
+        width: 97%;
+    }
+    .second-row, .third-row{
+        width: 97%;
+    }
+    .box {
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        background: #F4F3F4;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 20%;
+        border: 1px solid black;
+    }
+    footer {
+        width: 97%;
+    }
+    footer img{
+        display: none;
+    }
+}
+@media (max-width: 500px){
+    header {
+        height: 100%;
+    }
+    nav{
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        width: 97%;
+        border-top: 1px grey solid;
+        display: flex;
+        justify-content: center;
+        padding: 3% 0%;
+    }
+    nav a:last-child{
+        border-bottom: 1px solid gray;
+    }
+    .header-img {
+        padding-top: 5%;
+        width: 100%;
+    }
+    .header-img .services-header-img{
+        width: 95%;
+    }
+    .services{
+        width: 95%;
+    }
+    .first-row, .second-row, .third-row{
+        flex-direction: column;
+    }
+    .box{
+    }
+}
